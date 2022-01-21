@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="daken.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="text"> 
+            <h5 style="color: whitesmoke; font-family: sans-serif;">SIPAK BANGKED</h5>
+        </div>
+        <ul>
+            <li>
+                <img src="Tante.jpeg" alt="" width="50px" height="50px" style="float: left; margin-left: 30px; margin-right: 5px;"><a href="">Mufidah Anjani</a>
+                <form class="d-flex">
+                    <i class="fas fa-search"><input class="form-control" type="search" placeholder="Search" aria-label="Search"></i>
+                </form>
+            </li>
+            <li>
+                <a href="">Dashboard</a>
+            </li>
+            <li>
+                <a href="#" class="feat btn">Kendaraan
+                    <span class="fas fa-caret-down"></span></a>
+                <ul>    
+                    <li>
+                        <a href="">Data</a>
+                    </li>
+                    <li>
+                        <a href="daken.html">Data Parkir</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="gedung.html">Gedung</a>
+            </li>
+            <li>
+                <a href="gedung2.html">Area Parkir</a>
+            </li>
+            <li>
+                <a href="index.html">Log Out</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Content -->
+    <section id="container">
+        <div class="row" style="margin-left: 50px; padding: 40px;">
+            <h3 style="color: black;">Form Daftar Kendaraan</h3>
+            <br><br><a href="edgen.html"><icon><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-calendar-plus" viewBox="0 0 16 16" style="padding: 10px;">
+                <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+              </svg></i></a>
+            <div class="" style="text-align: end; margin-left: -100px; margin-top: -100px;">
+                <a href="" style="color: black;">Kendaraan
+                <span class="fas fa-caret-right"></span></a>
+                <a style="margin-right: 30px; color: black;">Daftar</a>
+            </div>
+        </div>
+        <div class="countainer">
+            <div class="bulet">
+                <h4 for="username" style="color: whitesmoke;">Cari Sivitas Akademika</h4>
+            <form class="flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+                </div>  
+            <form action="dashboard.html" class="loginform">
+                <div class="input-group">
+                    <label for="username" class="label" style="color: whitesmoke;">Nama Lengkap</label>
+                        <input type="text" id="username" class="input" placeholder="Mahasiswa/Dosen">
+                        <span class="eror-message"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="username" class="label" style="color: whitesmoke;">Asal Prodi</label>
+                            <input type="text" id="username" class="input" placeholder="Asal Prodi">
+                            <span class="eror-message"></span>
+                        </div>
+                    <div class="input-group">
+                        <label for="username" class="label" style="color: whitesmoke;">Status</label>
+                            <input type="text" id="username" class="input" placeholder="Mahasiswa/Dosen">
+                            <span class="eror-message"></span>  
+                <div class="pilih" style="color: whitesmoke; margin-bottom: 5px;">
+                        <label for="username" class="label" style="color: whitesmoke;">Jenis Kendaraan</label>
+                        <input type="radio" name="vehicle" class="vehicle" value="Motor" checked style=" margin: 5px; margin-left: 50px;">Motor
+                        <input type="radio" name="vehicle" value="Mobil" checked style=" margin: 5px; margin-left: 20px;">Mobil
+                    </div>
+                <div class="input-group">
+                    <label for="password" class="label" style="color: whitesmoke;">No. POL</label>
+                        <input type="password" id="username" class="input">
+                        <span class="eror-message"></span>
+                    </div>
+                <div class="input-group">
+                    <label for="username" class="label" style="color: whitesmoke;">Merk</label>
+                        <input type="text" id="username" class="input">
+                        <span class="eror-message"></span>
+                    </div>
+                <div class="input-group">
+                    <label for="username" class="label" style="color: whitesmoke;">Upload STNK</label>
+                <form method="post" action="proses.php" enctype="multipart/form-data">
+                    <input type="password" id="username" class="input">
+                    <input type="file" name="berkas" style="margin: 5px; margin-left: 250px;">
+                </form>
+                    </div>    
+                <button class="button" type="submit" herf="">Daftar</button>
+            </form>
+        </div>
+        </div>
+        <!-- Footer -->
+    <div class="footer">
+        <h3>Develop by Nawasena - STTNF</h3>
+    </div>
+    <!-- Akhir Footer -->
+    </section>
+</body>
+</html>

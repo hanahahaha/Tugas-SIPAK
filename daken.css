@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(monocrom.jpg);
+}
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: 0;
+    background-color: black;
+}
+.sidebar .text{
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background-color: black;
+    letter-spacing: 2px;
+}
+.d-flex{
+    appearance: none;
+    display: flex;
+    width: 100%;
+    color: whitesmoke;
+    margin: 10px;
+    justify-content: center;
+}
+.flex{
+    appearance: none;
+    display: flex;
+    width: 100%;
+    color: whitesmoke;
+    margin: 10px;
+    justify-content: flex-end;
+}
+nav ul{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+nav ul li{
+    line-height: 60px;
+    border-bottom: 1px solid darkred;
+}
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+    color: whitesmoke;
+}
+nav ul li a:hover{
+    color: cyan;
+    background-color: black;
+}
+nav ul ul{
+    position: static;
+}
+nav ul ul li{
+    line-height: 42px;
+    border-bottom: none;
+}
+nav ul ul li a{
+    font-size: 17px;
+    color: whitesmoke;
+    padding-left: 80px;
+}
+nav ul ul li a span{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    font-size: 22px;
+    transform: translateY(-50%);
+    transition: transform 0.4s;
+}
+nav ul ul li a span.rotate{
+    transform: translateY(-50px) rotate(-180deg);
+}
+section{
+    background:  no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+    margin-left: 200px;
+}
+.countainer{
+    box-sizing: border-box;
+    max-width: 460px;
+    margin: 1rem auto;
+    padding: 3rem;
+    border: 1px solid red;
+    background-color: black;    
+}
+  
+.text-center{
+  text-align: center;
+  margin-bottom: -4rem;
+  margin-top: 7rem;
+}
+  
+.input{
+  appearance: none;
+  display: block;
+  width: 100%;
+  color: black;
+  border: 1px solid whitesmoke;
+  border-radius: 25rem;
+  margin: 10px;
+  margin-left: -1rem;
+}
+  
+.button{
+  background-color: darkblue;
+  border: 2px solid darkblue;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  width: 10ex;
+  margin-left: 9rem;
+}
+  
+h3{
+  color: whitesmoke;
+}
+.footer{
+    background-color: black;
+    text-align: center;
+    height: 40px;
+    margin-top: 5px;
+}  

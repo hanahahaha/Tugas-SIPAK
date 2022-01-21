@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="regiskendaraan.css">
+
+    <!--icon-->
+    <link rel="shortcut icon" href="nawasena.png" type="image/x-icon">
+    <link rel="icon" href="nawasena.png" type="image/x-icon">
+
+    <title>Login</title>
+</head>
+<body>
+    
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-drak fixed-top" style="background-color: black;">
+    <div class="container">
+        <img src="NF.jpg" alt="" class="rounded-circle" width="30px">
+        <h1 class="navbar-brand" href="#" style="margin-left: 5px; color: white;">SIPAK-STTNF</h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" style="color: white">Home</a>
+        </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#news" style="color: whitesmoke;">Berita</a>
+        </li>
+            <li class="nav-item">
+            <a class="nav-link" href="registrasi.html" style="color: whitesmoke;">Registrasi User</a>
+        </li>
+            <li class="nav-item">
+            <a class="nav-link" href="login.html" style="color: whitesmoke;">Login</a>
+        </li>
+        </ul>
+    </div>
+</div>
+</nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Registrasi Kendaraan  -->
+    <body class="Login">
+        <h1 class="text-center">Registrasi Kendaraan</h1>
+            <br>
+        <div class="countainer">
+            <div class="bulet">
+                <label for="username" class="label" style="color: whitesmoke; margin: 10px; margin-right: 100px; margin-bottom: 10px;">Status</label>
+                <button type="button" class="btn btn-secondary rounded-circle" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right"></button>
+                    <span style="color: whitesmoke;">Mahasiswa</span>
+                <button type="button" class="btn btn-secondary rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom"></button>
+                    <span style="color: whitesmoke;">Dosen</span>
+                </div>  
+            <form action="dashboard.html" class="loginform">
+                <div class="input-group">
+                    <label for="username" class="label" style="color: whitesmoke;">NIM/NIDM</label>
+                        <input type="text" id="username" class="input">
+                        <span class="eror-message"></span>
+                    </div>
+                <div class="input-group">
+                    <label for="username" class="label" style="color: whitesmoke;">Nama Lengkap</label>
+                        <input type="text" id="username" class="input" placeholder="Mahasiswa/Dosen">
+                        <span class="eror-message"></span>
+                    </div>
+                <div class="input-group">
+                    <label for="username" class="label" style="color: whitesmoke; margin-bottom: 5px;">Prodi</label>    
+                <select name="quantity" id="quantity" style="width: 50%; margin-left: 170px; margin-top: -30px; text-align: center;">
+                    <option value="Asal Prodi">SI01</option>
+                    <option value="Asal Prodi">SI02</option>
+                    <option value="Asal Prodi">SI03</option>
+                    <option value="Asal Prodi">SI04</option>
+                    <option value="Asal Prodi">SI05</option>
+                    <option value="Asal Prodi">SI06</option>
+                    <option value="Asal Prodi">SI07</option>
+                    <option value="Asal Prodi">SI08</option>
+                    <option value="Asal Prodi">SI09</option>
+                    <option value="Asal Prodi">SI10</option>
+                </select>
+                    </div>   
+                <div class="bulet">
+                    <label for="username" class="label" style="color: whitesmoke; margin-top: 10px; margin-right: 25px; margin-bottom: 10px;">Jenis Kendaraan</label>
+                    <button type="button" class="btn btn-secondary rounded-circle" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right"></button>
+                        <span style="color: whitesmoke; margin: 10px;">Mobil</span>
+                    <button type="button" class="btn btn-secondary rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom"></button>
+                        <span style="color: whitesmoke; margin: 10px;">Motor</span>
+                    </div>
+                <div class="input-group">
+                    <label for="password" class="label" style="color: whitesmoke;">No. POL</label>
+                        <input type="password" id="username" class="input">
+                        <span class="eror-message"></span>
+                    </div>
+                <div class="input-group">
+                    <label for="username" class="label" style="color: whitesmoke;">Merk</label>
+                        <input type="text" id="username" class="input">
+                        <span class="eror-message"></span>
+                    </div>
+                <div class="input-group">
+                    <label for="username" class="label" style="color: whitesmoke;">Upload STNK</label>
+                <form method="post" action="proses.php" enctype="multipart/form-data">
+                    <input type="password" id="username" class="input">
+                    <input type="file" name="berkas" style="margin: 5px; margin-left: 250px;">
+                </form>
+                    </div>    
+                <button class="button" type="submit" herf="">Daftar</button>
+            </form>
+        </div>
+    <!-- Akhir Registrasi Kendaraan -->    
+    </body>
+</html>

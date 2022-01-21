@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="edgen.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="text"> 
+            <h5 style="color: whitesmoke; font-family: sans-serif;">SIPAK-Backend</h5>
+        </div>
+        <ul>
+            <li>
+                <img src="Tante.jpeg" alt="" width="50px" height="50px" style="float: left; margin-left: 30px; margin-right: 5px;"><a href="">Mufidah Anjani</a>
+                <form class="d-flex">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </li>
+            <li>
+                <a href="">Dashboard</a>
+            </li>
+            <li>
+                <a href="#" class="feat btn">Kendaraan
+                    <span class="fas fa-caret-down"></span></a>
+                <ul>    
+                    <li>
+                        <a href="">Data</a>
+                    </li>
+                    <li>
+                        <a href="daken.html">Data Parkir</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="gedung.html">Gedung</a>
+            </li>
+            <li>
+                <a href="gedung2.html">Area Parkir</a>
+            </li>
+            <li>
+                <a href="index.html">Log Out</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Content -->
+    <section id="container">
+        <div class="row" style="margin-left: 50px; padding: 40px;">
+            <h3>Data Kendaraan</h3>
+            <div class="" style="text-align: end; margin-left: -100px;">
+                <a href="">Alumni
+                <span class="fas fa-caret-right"></span>
+                </a>
+                <a style="margin-right: 30px;">...</a>
+            </div>
+            <h3>Jenis Kendaraan: </h3>
+            <div class="" style="margin-left: 200px;">
+                <input type="radio" name="vehicle" class="vehicle" value="Motor" checked>Motor
+                <input type="radio" name="vehicle" value="Mobil" checked>Mobil
+            </div>
+            <!-- <img src="plus.png" alt=""> -->
+            <span class="far fa-calendar-plus fa-2x"></span>
+        </div>
+        <table>
+            <tr>
+                <td>No</td>
+                <td>Nopol</td>
+                <td>Merk</td>
+                <td>Pemilik</td>
+                <td href="#" class="feat btn">Status
+                    <span class="fas fa-caret-down"></span></a>
+                <!-- <td>Status</td> -->
+                <td>Action</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>B2040 DFG</td>
+                <td>Honda Beat</td>
+                <td>Badrul Alam</td>
+                <td>Dosen</td>
+                <td>
+                    <a href="#">Edit</a> |
+                    <a href="#">Hapus</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>B5230 SFV</td>
+                <td style="color: black;">Yamaha NMAX</td>
+                <td style="color: black;">Fatimah Zahrani</td>
+                <td style="color: black;">Mahasiswa</td>
+                <td>
+                    <a href="#">Edit</a> |
+                    <a href="#">Hapus</a>
+                </td>
+            </tr>
+        </table>
+
+        <div>
+            <form>
+                <fieldset style="margin-top: -260px; margin-left: -150px; background-color: black;">
+                <legend style="margin: 20px; color: whitesmoke;">Form Gedung</legend>
+                <br>
+                <p>
+                    <label style="margin: 10px; color: whitesmoke;">Nama Gedung</label>
+                    <textarea name="" id="" cols="50" rows="2" style="margin-top: 5px;"></textarea>
+                </p>
+                <br>
+                <p>
+                    <label style="margin: 10px; color: whitesmoke;">Alamat</label>
+                    <textarea name="" id="" cols="50" rows="10" style="margin: 128px; margin-top: -20px;"></textarea>
+                </p>
+                    <br>
+                <button class="button" type="submit" herf="">Simpan</button>
+                </fieldset>
+            </form>
+        </div>
+    
+        <!-- Footer -->
+    <div class="footer">
+        <h3>Develop by Nawasena - STTNF</h3>
+    </div>
+    <!-- Akhir Footer -->
+    </section>
+</body>
+</html>
